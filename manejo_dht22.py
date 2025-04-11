@@ -11,7 +11,8 @@ class SensorDHT22:
         self.mensaje = {
             'id': 1,
             'humedad': None,
-            'temperatura': None
+            'temperatura': None,
+            'action': 'response',
         }
         self.timer = machine.Timer(1)
         self.periodo = 6000  # Periodo inicial en milisegundos
